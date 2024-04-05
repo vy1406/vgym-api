@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ui2tVS9FuqRScyDznSjxHC+5XeWEtEdAJL+VCReX3B0=",
+  "Source": "Vgym.Server",
+  "BasePath": "_content/Vgym.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

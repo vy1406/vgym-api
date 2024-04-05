@@ -1,0 +1,6 @@
+@Vgym.Server_HostAddress = http://localhost:5177
+
+GET {{Vgym.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
