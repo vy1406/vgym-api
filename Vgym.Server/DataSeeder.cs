@@ -11,7 +11,7 @@ namespace Vgym.Server
             using var scope = host.Services.CreateScope();
             using var context = scope.ServiceProvider.GetRequiredService<VgymSqlDbContext>();
             //might need to remove this line when connecting to a cloud db
-            context.Database.EnsureCreated();
+            
             AddUsers(context);
         }
 

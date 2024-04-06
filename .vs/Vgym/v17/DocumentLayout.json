@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{4276FB50-445D-437C-AE9F-5414841C9A65}|Vgym.Server\\Vgym.Server.csproj|solutionrelative:vgym.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4276FB50-445D-437C-AE9F-5414841C9A65}|Vgym.Server\\Vgym.Server.csproj|c:\\users\\asus\\source\\repos\\vgym-api\\vgym.server\\data\\dbcontexts\\vgymsqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4276FB50-445D-437C-AE9F-5414841C9A65}|Vgym.Server\\Vgym.Server.csproj|solutionrelative:vgym.server\\data\\dbcontexts\\vgymsqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4276FB50-445D-437C-AE9F-5414841C9A65}|Vgym.Server\\Vgym.Server.csproj|c:\\users\\asus\\source\\repos\\vgym-api\\vgym.server\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4276FB50-445D-437C-AE9F-5414841C9A65}|Vgym.Server\\Vgym.Server.csproj|solutionrelative:vgym.server\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4276FB50-445D-437C-AE9F-5414841C9A65}|Vgym.Server\\Vgym.Server.csproj|c:\\users\\asus\\source\\repos\\vgym-api\\vgym.server\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4276FB50-445D-437C-AE9F-5414841C9A65}|Vgym.Server\\Vgym.Server.csproj|solutionrelative:vgym.server\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,28 +26,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DataSeeder.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\DataSeeder.cs",
               "RelativeDocumentMoniker": "Vgym.Server\\DataSeeder.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\DataSeeder.cs*",
-              "RelativeToolTip": "Vgym.Server\\DataSeeder.cs*",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAABkAAAA",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\DataSeeder.cs",
+              "RelativeToolTip": "Vgym.Server\\DataSeeder.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T17:56:51.856Z",
+              "WhenOpened": "2024-04-06T20:55:45.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VgymSqlDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Data\\DbContexts\\VgymSqlDbContext.cs",
-              "RelativeDocumentMoniker": "Vgym.Server\\Data\\DbContexts\\VgymSqlDbContext.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Data\\DbContexts\\VgymSqlDbContext.cs",
-              "RelativeToolTip": "Vgym.Server\\Data\\DbContexts\\VgymSqlDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAASAAAA",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Vgym.Server\\Models\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "Vgym.Server\\Models\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T17:41:55.424Z",
+              "WhenOpened": "2024-04-06T18:22:09.87Z",
               "EditorCaption": ""
             },
             {
@@ -56,9 +56,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Program.cs",
               "RelativeDocumentMoniker": "Vgym.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Program.cs*",
-              "RelativeToolTip": "Vgym.Server\\Program.cs*",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAAAXAAAA",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Program.cs",
+              "RelativeToolTip": "Vgym.Server\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-06T17:23:50.574Z",
               "EditorCaption": ""
