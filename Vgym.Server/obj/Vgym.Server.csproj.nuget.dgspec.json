@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Source\\Repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj": {}
+    "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Source\\Repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj": {
+    "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Source\\Repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj",
         "projectName": "Vgym.Server",
-        "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj",
+        "projectPath": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\Vgym.Server.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\vgym-api\\Vgym.Server\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\source\\repos\\vgym-api\\Vgym.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
