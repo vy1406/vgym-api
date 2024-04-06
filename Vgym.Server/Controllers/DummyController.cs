@@ -13,9 +13,9 @@ namespace Vgym.Server.Controllers
     public class DummyController : ControllerBase
     {
         //A dependency injection of a service 
-        private readonly IDummyService _dummyService;
+        private readonly IUserService _dummyService;
 
-        public DummyController(IDummyService dummyService)
+        public DummyController(IUserService dummyService)
         {
                 _dummyService=dummyService;
         }

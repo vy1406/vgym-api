@@ -1,4 +1,6 @@
 
+using Microsoft.EntityFrameworkCore;
+using Vgym.Data.Contexts;
 using Vgym.Server.Services;
 
 namespace Vgym.Server
@@ -14,10 +16,8 @@ namespace Vgym.Server
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            //Example of a service add to dependency injection
-            //Dependency injection of a service
-            //whereever a IDummyService is requested recives an instance of DummyService
-            builder.Services.AddTransient<IDummyService, DummyService>();
+            builder.Services.AddDbContext<VgymSqlDbContext>(options=>options.UseNpgsql(builder.Configuration.GetConnectionString("VgymDB")));
+            builder.Services.AddTransient<IUserService, UserService>();
 
             var app = builder.Build();
 
@@ -34,7 +34,7 @@ namespace Vgym.Server
 
 
             app.MapControllers();
-
+            app.Seed();
             app.Run();
         }
     }
