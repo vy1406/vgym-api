@@ -16,7 +16,7 @@ namespace Vgym.Server
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddDbContext<VgymSqlDbContext>(options=>options.UseNpgsql(builder.Configuration.GetConnectionString("VgymDB")));
+            builder.Services.AddDbContext<VgymSqlDbContext>(options=>options.UseNpgsql(builder.Configuration.GetConnectionString("DevDb")));
             builder.Services.AddTransient<IUserService, UserService>();
 
             var app = builder.Build();
