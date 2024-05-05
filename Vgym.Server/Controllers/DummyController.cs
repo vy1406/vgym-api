@@ -21,7 +21,7 @@ namespace Vgym.Server.Controllers
         }
 
         //Example for endpoint:
-        // GET: api/<DummyController>
+        // GET: api/DummyController
         [HttpGet]
         public IActionResult Get()
         {
@@ -35,7 +35,7 @@ namespace Vgym.Server.Controllers
             return Ok(response);
         }
         //Example for endpoint:
-        // GET api/<DummyController>/5
+        // GET api/DummyController/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -48,7 +48,7 @@ namespace Vgym.Server.Controllers
             return Ok(response);
         }
         //Example for endpoint:
-        // POST api/<DummyController>
+        // POST api/DummyController
         [HttpPost]
         public IActionResult Post([FromBody] string value)
         {
@@ -61,7 +61,7 @@ namespace Vgym.Server.Controllers
             return Ok(response);
         }
         //Example for endpoint:
-        // PUT api/<DummyController>/5
+        // PUT api/DummyController/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] string value)
         {
@@ -74,7 +74,7 @@ namespace Vgym.Server.Controllers
             return Ok(response);
         }
         //Example for endpoint:
-        // DELETE api/<DummyController>/5
+        // DELETE api/DummyController/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
