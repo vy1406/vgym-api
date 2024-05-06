@@ -7,11 +7,9 @@ namespace Vgym.Server.Services
     //needs to change later to work with returning DTO's
     public interface IUserService
     {
-        User GetDummy(int id);
-        IEnumerable<User> GetAllUsers();
-        void AddUser(User user);
-        void UpdateUser(User user);
-        void DeleteUser(int id);
-
+        Task<User> CreateUserAsync(User user);
+        Task<User> UpdateUserAsync(User user);
+        Task<User> DeleteUserAsync(User user);
+        Task<User> GetUserByIdAsync(int id);
     }
 }

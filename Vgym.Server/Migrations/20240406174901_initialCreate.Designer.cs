@@ -10,7 +10,7 @@ using Vgym.Data.Contexts;
 
 namespace Vgym.Server.Migrations
 {
-    [DbContext(typeof(VgymSqlDbContext))]
+    [DbContext(typeof(VgymDbContext))]
     [Migration("20240406174901_initialCreate")]
     partial class initialCreate
     {

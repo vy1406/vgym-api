@@ -9,7 +9,7 @@ using Vgym.Data.Contexts;
 
 namespace Vgym.Server.Migrations
 {
-    [DbContext(typeof(VgymSqlDbContext))]
+    [DbContext(typeof(VgymDbContext))]
     partial class VgymSqlDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

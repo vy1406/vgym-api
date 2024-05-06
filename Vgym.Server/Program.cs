@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using Vgym.Data.Contexts;
+using Vgym.Models.Entities;
+using Vgym.Server.Data.Repositories;
 using Vgym.Server.Services;
 
 namespace Vgym.Server
@@ -19,12 +21,12 @@ namespace Vgym.Server
             //Depending on enviroment the connection to db is decided
             if(builder.Environment.IsDevelopment())
             {
-                builder.Services.AddDbContext<VgymSqlDbContext>(options => 
+                builder.Services.AddDbContext<VgymDbContext>(options => 
                 options.UseNpgsql(builder.Configuration.GetConnectionString("LocalDb")));
             }
             else
             {
-                builder.Services.AddDbContext<VgymSqlDbContext>(options =>
+                builder.Services.AddDbContext<VgymDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("CloudDb")));
             }
             builder.Services.AddCors(opt =>
@@ -33,13 +35,15 @@ namespace Vgym.Server
                 {
                     builder.WithOrigins("http://localhost:3000")
                     .AllowAnyHeader()
-                    .AllowAnyMethod();
-                    //.AllowCredentials();
+                    .AllowAnyMethod()
+                    .AllowCredentials();
                 });
 
             });
 
             builder.Services.AddTransient<IUserService, UserService>();
+            builder.Services.AddTransient<ILoginService, LoginService>();
+            builder.Services.AddTransient<IRepository<User>,UserRepository>();
 
             var app = builder.Build();
 

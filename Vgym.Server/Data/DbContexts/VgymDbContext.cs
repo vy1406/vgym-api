@@ -1,16 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Vgym.Models.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Vgym.Data.Contexts
 {
-    public class VgymSqlDbContext:DbContext
+    public class VgymDbContext:DbContext
     {
-        public VgymSqlDbContext(DbContextOptions<VgymSqlDbContext>options):base(options) { }
+        public VgymDbContext(DbContextOptions<VgymDbContext>options):base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

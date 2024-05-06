@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Vgym.Models.Entities;
+using Vgym.Server.Services;
 using Vgym.Server.Utilities;
 
 namespace Vgym.Server.Controllers
@@ -9,16 +10,16 @@ namespace Vgym.Server.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        [HttpPost]
-        public IActionResult Login(User user)
+        private readonly ILoginService _loginService;
+
+        public LoginController(ILoginService loginService)
         {
-            var response = new
-            {
-                ErrorCode = ErrorCodes.NO_ERROR,
-                ErrorMessage = "message from post in api",
-                
-            };
-            Console.WriteLine($"{user}");
+            _loginService = loginService;
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(User user)
+        {
+            var response = await _loginService.AuthenticateUserAsync(user);
             return Ok(response);
         }
     }

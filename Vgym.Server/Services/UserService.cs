@@ -7,27 +7,22 @@ namespace Vgym.Server.Services
     //needs to change to work with DTO's 
     public class UserService : IUserService
     {
-        public void AddUser(User user)
+        public Task<User> CreateUserAsync(User user)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteUser(int id)
+        public Task<User> DeleteUserAsync(User user)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<User> GetAllUsers()
+        public Task<User> GetUserByIdAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public User GetDummy(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateUser(User user)
+        public Task<User> UpdateUserAsync(User user)
         {
             throw new NotImplementedException();
         }

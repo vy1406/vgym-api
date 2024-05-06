@@ -9,13 +9,13 @@ namespace Vgym.Server
         public static void Seed(this IHost host)
         {
             using var scope = host.Services.CreateScope();
-            using var context = scope.ServiceProvider.GetRequiredService<VgymSqlDbContext>();
+            using var context = scope.ServiceProvider.GetRequiredService<VgymDbContext>();
             //might need to remove this line when connecting to a cloud db
             
             AddUsers(context);
         }
 
-        private static void AddUsers(VgymSqlDbContext context)
+        private static void AddUsers(VgymDbContext context)
         {
             var user1 = new User { UserName = "Ironman", Password = "123", IsAdmin = false };
             var user2 = new User { UserName = "Batman", Password = "123", IsAdmin =false };
