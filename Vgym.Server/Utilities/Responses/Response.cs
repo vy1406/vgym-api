@@ -1,8 +1,8 @@
 ﻿namespace Vgym.Server.Utilities.Responses
 {
-    public class LoginResponse : IResopnse
+    public class Response : IResopnse
     {
-        public LoginResponse()
+        public Response()
         {
             ErrorCode = ErrorCodes.NO_ERROR;
             ErrorMessage = null!;

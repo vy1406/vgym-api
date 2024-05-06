@@ -40,7 +40,7 @@ namespace Vgym.Server.Data.Repositories
 
         public async Task<User> GetByName(string requestedName)
         {
-            var userFromDb = await _context.Users.SingleOrDefaultAsync(user => user.UserName == requestedName);
+            var userFromDb = await _context.Users.SingleOrDefaultAsync(user => user.Username == requestedName);
             return userFromDb;
             //later needs to look like the snippet below and return custom data exeptions in the else statement
             //if (userFromDb != null)

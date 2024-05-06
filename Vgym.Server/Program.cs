@@ -43,6 +43,7 @@ namespace Vgym.Server
 
             builder.Services.AddTransient<IUserService, UserService>();
             builder.Services.AddTransient<ILoginService, LoginService>();
+            builder.Services.AddTransient<ISignupService, SignupService>();
             builder.Services.AddTransient<IRepository<User>,UserRepository>();
 
             var app = builder.Build();

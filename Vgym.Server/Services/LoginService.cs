@@ -14,7 +14,7 @@ namespace Vgym.Server.Services
             _userRepository = userRepository;
         }
         //TODO: need to change params later to request when working with JWT tokens
-        public async Task<LoginResponse> AuthenticateUserAsync(User userToAuthenticate)
+        public async Task<Response> AuthenticateUserAsync(User userToAuthenticate)
         {
             var exisitingUser = await GetUserAsync(userToAuthenticate);
             if (exisitingUser == null)
@@ -40,8 +40,8 @@ namespace Vgym.Server.Services
                 return false;
             }
         }
-        private async Task<User> GetUserAsync(User userToAuthenticate) => await _userRepository.GetByName(userToAuthenticate.UserName);
-        private LoginResponse GenarateOkResponse() => new LoginResponse();
-        private LoginResponse GenarateErrorResponse(string message) => new LoginResponse { ErrorCode = ErrorCodes.INTERNAL_ERROR, ErrorTitle = "Error", ErrorMessage = message };
+        private async Task<User> GetUserAsync(User userToAuthenticate) => await _userRepository.GetByName(userToAuthenticate.Username);
+        private Response GenarateOkResponse() => new Response();
+        private Response GenarateErrorResponse(string message) => new Response { ErrorCode = ErrorCodes.INTERNAL_ERROR, ErrorTitle = "Error", ErrorMessage = message };
     }
 }

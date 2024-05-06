@@ -6,6 +6,6 @@ namespace Vgym.Server.Services
 {
     public interface ILoginService
     {
-        Task<LoginResponse> AuthenticateUserAsync(User user);
+        Task<Response> AuthenticateUserAsync(User user);
     }
 }

@@ -9,7 +9,7 @@ namespace Vgym.Server.Utilities.Requests
 
         public LoginRequest(User user)
         {
-            Username = user.UserName;
+            Username = user.Username;
             Password = user.Password;
         }
     }

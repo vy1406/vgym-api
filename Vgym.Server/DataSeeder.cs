@@ -17,9 +17,9 @@ namespace Vgym.Server
 
         private static void AddUsers(VgymDbContext context)
         {
-            var user1 = new User { UserName = "Ironman", Password = "123", IsAdmin = false };
-            var user2 = new User { UserName = "Batman", Password = "123", IsAdmin =false };
-            var user3 = new User { UserName = "Ladygaga",Password = "123", IsAdmin =true };
+            var user1 = new User { Username = "Ironman", Password = "123", IsAdmin = false };
+            var user2 = new User { Username = "Batman", Password = "123", IsAdmin =false };
+            var user3 = new User { Username = "Ladygaga",Password = "123", IsAdmin =true };
             
             if(!context.Users.Any() )
             {
