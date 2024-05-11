@@ -15,6 +15,7 @@ namespace Vgym.Server
             //might need to remove this line when connecting to a cloud db
             
             AddUsers(context);
+            AddPrograms(context);
         }
 
         private static void AddUsers(VgymDbContext context)
@@ -37,9 +38,13 @@ namespace Vgym.Server
             var p3 = new TrainingProgram { Title = "Full Body", Type = ProgramType.BASIC, Duration = 1, BackgroundImage = "/Images/full_body_workout.jpg" };  
             var p4 = new TrainingProgram { Title = "Advanced Full Body", Type = ProgramType.ADVANCED, Duration = 5, BackgroundImage = "/Images/advanced_full_body_workout.webp" };  
             var p5 = new TrainingProgram { Title = "Dumbells Only", Type = ProgramType.BASIC, Duration = 3, BackgroundImage = "/Images/dumbell_workout.webp" };  
-            var p6 = new TrainingProgram { Title = "Six Pack Abs", Type = ProgramType.POPULAR, Duration = 4, BackgroundImage = "/Images/abs_workout.png" };  
+            var p6 = new TrainingProgram { Title = "Six Pack Abs", Type = ProgramType.POPULAR, Duration = 4, BackgroundImage = "/Images/abs_workout.png" };
 
-            
+            if (!context.Training_Programs.Any())
+            {
+                context.AddRange(p1, p2, p3, p4, p5, p6);
+                context.SaveChanges();
+            }
         }
     }
 }
