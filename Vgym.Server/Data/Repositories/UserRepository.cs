@@ -38,6 +38,11 @@ namespace Vgym.Server.Data.Repositories
             return await _context.Users.ToListAsync();
         }
 
+        public async Task<User> GetById(int id)
+        {
+            return await _context.Users.SingleOrDefaultAsync(user => user.Id == id);
+        }
+
         public async Task<User> GetByName(string requestedName)
         {
             var userFromDb = await _context.Users.SingleOrDefaultAsync(user => user.Username == requestedName);

@@ -1,6 +1,6 @@
 ﻿using Vgym.Data.Contexts;
 using Vgym.Models.Entities;
-using Vgym.Server.Utilities;
+using Vgym.Server.Utilities.Enums;
 
 
 namespace Vgym.Server
@@ -40,7 +40,7 @@ namespace Vgym.Server
             var p5 = new TrainingProgram { Title = "Dumbells Only", Type = ProgramType.BASIC, Duration = 3, BackgroundImage = "/Images/dumbell_workout.webp" };  
             var p6 = new TrainingProgram { Title = "Six Pack Abs", Type = ProgramType.POPULAR, Duration = 4, BackgroundImage = "/Images/abs_workout.png" };
 
-            if (!context.Training_Programs.Any())
+            if (!context.TrainingPrograms.Any())
             {
                 context.AddRange(p1, p2, p3, p4, p5, p6);
                 context.SaveChanges();

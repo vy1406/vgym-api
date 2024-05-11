@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Vgym.Models.Entities;
 using Vgym.Server.Data.Repositories;
-using Vgym.Server.Utilities;
+using Vgym.Server.Utilities.Enums;
 using Vgym.Server.Utilities.Responses;
 
 namespace Vgym.Server.Services

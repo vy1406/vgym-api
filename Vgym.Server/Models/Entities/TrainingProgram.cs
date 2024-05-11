@@ -1,4 +1,4 @@
-﻿using Vgym.Server.Utilities;
+﻿using Vgym.Server.Utilities.Enums;
 
 namespace Vgym.Models.Entities
 {

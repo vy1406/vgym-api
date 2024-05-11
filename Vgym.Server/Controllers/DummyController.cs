@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Vgym.Server.Services;
-using Vgym.Server.Utilities;
+using Vgym.Server.Utilities.Enums;
 
 
 
 namespace Vgym.Server.Controllers
 {
     //Example boilerplate for a controller that implaments CRUD oparations
-    
+
     [Route("api/[controller]")]
     [ApiController]
     public class DummyController : ControllerBase

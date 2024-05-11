@@ -1,4 +1,4 @@
-﻿namespace Vgym.Server.Utilities
+﻿namespace Vgym.Server.Utilities.Enums
 {
     public enum ProgramType
     {

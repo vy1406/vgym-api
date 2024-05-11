@@ -1,4 +1,6 @@
-﻿namespace Vgym.Server.Utilities.Responses
+﻿using Vgym.Server.Utilities.Enums;
+
+namespace Vgym.Server.Utilities.Responses
 {
     public class Response : IResopnse
     {
