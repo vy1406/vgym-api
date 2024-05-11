@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vgym.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ee06c80dad559d7afe65247babd5ff6ee3103f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02097bde0cc0365819a9af55e0476b77f114894d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vgym.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vgym.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,5 +13,6 @@ namespace Vgym.Data.Contexts
             modelBuilder.UseIdentityColumns();
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<TrainingProgram> Training_Programs { get; set;}
     }
 }

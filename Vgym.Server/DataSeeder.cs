@@ -1,5 +1,7 @@
 ﻿using Vgym.Data.Contexts;
 using Vgym.Models.Entities;
+using Vgym.Server.Utilities;
+
 
 namespace Vgym.Server
 {
@@ -26,6 +28,18 @@ namespace Vgym.Server
                 context.AddRange(user1, user2, user3);
                 context.SaveChanges();
             }
+        }
+
+        private static void AddPrograms(VgymDbContext context)
+        {
+            var p1 = new TrainingProgram { Title = "Squat Challenge", Type = ProgramType.ADVANCED, Duration = 3, BackgroundImage = "/Images/squat_challange.jpg" };
+            var p2 = new TrainingProgram { Title = "Cardio Blast", Type = ProgramType.POPULAR, Duration = 4, BackgroundImage = "/Images/cardio_workout.jpeg" };  
+            var p3 = new TrainingProgram { Title = "Full Body", Type = ProgramType.BASIC, Duration = 1, BackgroundImage = "/Images/full_body_workout.jpg" };  
+            var p4 = new TrainingProgram { Title = "Advanced Full Body", Type = ProgramType.ADVANCED, Duration = 5, BackgroundImage = "/Images/advanced_full_body_workout.webp" };  
+            var p5 = new TrainingProgram { Title = "Dumbells Only", Type = ProgramType.BASIC, Duration = 3, BackgroundImage = "/Images/dumbell_workout.webp" };  
+            var p6 = new TrainingProgram { Title = "Six Pack Abs", Type = ProgramType.POPULAR, Duration = 4, BackgroundImage = "/Images/abs_workout.png" };  
+
+            
         }
     }
 }

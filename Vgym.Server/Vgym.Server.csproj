@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Models\Dtos\" />
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>

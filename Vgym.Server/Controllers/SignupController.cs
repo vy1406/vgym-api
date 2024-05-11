@@ -16,7 +16,7 @@ namespace Vgym.Server.Controllers
             _signupService = signupService;
         }
         [HttpPost]
-        public async Task<IActionResult> Login(User user)
+        public async Task<IActionResult> Signup(User user)
         {
             var response = await _signupService.SignupUserAsync(user);
             return Ok(response);

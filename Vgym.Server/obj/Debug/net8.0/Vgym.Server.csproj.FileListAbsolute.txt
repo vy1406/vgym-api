@@ -103,3 +103,4 @@ C:\Users\ASUS\source\repos\vgym-api\Vgym.Server\bin\Debug\net8.0\tr\Microsoft.Co
 C:\Users\ASUS\source\repos\vgym-api\Vgym.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ASUS\source\repos\vgym-api\Vgym.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\ASUS\source\repos\vgym-api\Vgym.Server\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\ASUS\source\repos\vgym-api\Vgym.Server\bin\Debug\net8.0\Vgym.Server.staticwebassets.runtime.json

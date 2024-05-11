@@ -1,5 +1,7 @@
-﻿using Vgym.Models.Entities;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+using Vgym.Models.Entities;
 using Vgym.Server.Data.Repositories;
+using Vgym.Server.Utilities;
 using Vgym.Server.Utilities.Responses;
 
 namespace Vgym.Server.Services
@@ -14,17 +16,27 @@ namespace Vgym.Server.Services
             _userRepository = userRepository;
         }
 
-        public Task<Response> SignupUserAsync(User user)
+        public async Task<Response> SignupUserAsync(User user)
         {
-            _userRepository.Add(user);
+            if (await IsUsernameTaken(user.Username))
+            {
+                return GenarateErrorResponse("Error registering user");
+            }
+            else
+            {
+                await _userRepository.Add(user);
+                return GenarateSuccessResponse("User was added successfully");
+            }
+            
         }
 
-        private async Task<bool> IsUsernameAvailable(string username)
+        private async Task<bool> IsUsernameTaken(string username)
         {
             var users = await GetUsersAsync();
-            users.Any(u => u.Username == username);
+            return users.Any(u => u.Username == username);
         }
-
+        private Response GenarateErrorResponse(string message) => new Response { ErrorCode = ErrorCodes.INTERNAL_ERROR, ErrorMessage = message };
+        private Response GenarateSuccessResponse(string message) => new Response { ErrorMessage = message };
         private async Task<IEnumerable<User>> GetUsersAsync() => await _userRepository.GetAll();
     }
 }
